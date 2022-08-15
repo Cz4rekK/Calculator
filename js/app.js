@@ -21,10 +21,14 @@ let secondNumber = "";
 let operator = "";
 let result = "";
 
-one.addEventListener("click", function () {
-  if (operator && x === true) {
-    document.querySelector(".result").innerHTML = "";
+document.querySelector(".result").innerHTML = 0;
 
+one.addEventListener("click", function () {
+  if (
+    (operator && x === true) ||
+    document.querySelector(".result").innerHTML == 0
+  ) {
+    document.querySelector(".result").innerHTML = "";
     x = false;
   }
   if (result === "") {
@@ -36,7 +40,10 @@ one.addEventListener("click", function () {
 });
 
 two.addEventListener("click", function () {
-  if (operator && x === true) {
+  if (
+    (operator && x === true) ||
+    document.querySelector(".result").innerHTML == 0
+  ) {
     document.querySelector(".result").innerHTML = "";
 
     x = false;
@@ -50,7 +57,10 @@ two.addEventListener("click", function () {
 });
 
 three.addEventListener("click", function () {
-  if (operator && x === true) {
+  if (
+    (operator && x === true) ||
+    document.querySelector(".result").innerHTML == 0
+  ) {
     document.querySelector(".result").innerHTML = "";
 
     x = false;
@@ -64,7 +74,10 @@ three.addEventListener("click", function () {
 });
 
 four.addEventListener("click", function () {
-  if (operator && x === true) {
+  if (
+    (operator && x === true) ||
+    document.querySelector(".result").innerHTML == 0
+  ) {
     document.querySelector(".result").innerHTML = "";
 
     x = false;
@@ -78,7 +91,10 @@ four.addEventListener("click", function () {
 });
 
 five.addEventListener("click", function () {
-  if (operator && x === true) {
+  if (
+    (operator && x === true) ||
+    document.querySelector(".result").innerHTML == 0
+  ) {
     document.querySelector(".result").innerHTML = "";
 
     x = false;
@@ -92,7 +108,10 @@ five.addEventListener("click", function () {
 });
 
 six.addEventListener("click", function () {
-  if (operator && x === true) {
+  if (
+    (operator && x === true) ||
+    document.querySelector(".result").innerHTML == 0
+  ) {
     document.querySelector(".result").innerHTML = "";
 
     x = false;
@@ -106,7 +125,10 @@ six.addEventListener("click", function () {
 });
 
 seven.addEventListener("click", function () {
-  if (operator && x === true) {
+  if (
+    (operator && x === true) ||
+    document.querySelector(".result").innerHTML == 0
+  ) {
     document.querySelector(".result").innerHTML = "";
 
     x = false;
@@ -120,7 +142,10 @@ seven.addEventListener("click", function () {
 });
 
 eight.addEventListener("click", function () {
-  if (operator && x === true) {
+  if (
+    (operator && x === true) ||
+    document.querySelector(".result").innerHTML == 0
+  ) {
     document.querySelector(".result").innerHTML = "";
 
     x = false;
@@ -134,7 +159,10 @@ eight.addEventListener("click", function () {
 });
 
 nine.addEventListener("click", function () {
-  if (operator && x === true) {
+  if (
+    (operator && x === true) ||
+    document.querySelector(".result").innerHTML == 0
+  ) {
     document.querySelector(".result").innerHTML = "";
 
     x = false;
@@ -171,13 +199,13 @@ dot.addEventListener("click", function () {
   if (
     result === "" &&
     !document.querySelector(".result").innerHTML.includes(".") &&
-    !x
+    x
   ) {
     document.querySelector(".result").innerHTML += ".";
   } else if (
     result !== "" &&
     !document.querySelector(".result").innerHTML.includes(".") &&
-    !x
+    x
   ) {
     document.querySelector(".result").innerHTML = ".";
     result = "";
@@ -293,7 +321,7 @@ equal.addEventListener("click", function () {
 });
 
 clear.addEventListener("click", function () {
-  document.querySelector(".result").innerHTML = "";
+  document.querySelector(".result").innerHTML = "0";
   firstNumber = "";
   secondNumber = "";
   operator = "";
