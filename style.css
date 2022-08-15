@@ -121,3 +121,12 @@ html {
   bottom: 0px;
   padding: 1rem;
 }
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 3rem;
+    text-align: center;
+    text-justify: center;
+    max-width: 100vh;
+  }
+}
