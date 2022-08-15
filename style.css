@@ -48,6 +48,7 @@ html {
   padding-bottom: 49px;
   padding-right: 10px;
   margin-bottom: 10px;
+  max-width: 220px;
 }
 .cell {
   justify-self: center;
