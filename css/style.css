@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #333 2px solid;
+  padding: 10px;
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.result {
+  width: 100%;
+  font-size: 4rem;
+  height: 4rem;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  text-align: right;
+  padding-bottom: 49px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+.cell {
+  justify-self: center;
+  align-self: center;
+  border: 1px solid #333;
+  border-radius: 2px;
+  columns: #333;
+  height: 4rem;
+  width: 4rem;
+  text-shadow: 0 2px rgba(255, 255, 255, 0.4);
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.equal {
+  background-color: #333;
+  color: #fff;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.sign {
+  background-color: #555;
+  color: #fff;
+}
+
+.cell:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.sign:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #333;
+  height: 8rem;
+  width: 100%;
+  border-bottom: 1px solid #333;
+}
+
+.footer {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #333;
+  height: 3rem;
+  width: 100%;
+  border-top: 1px solid #333;
+  position: absolute;
+  bottom: 0px;
+  padding: 1rem;
+}
